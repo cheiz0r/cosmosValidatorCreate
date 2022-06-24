@@ -1,0 +1,13 @@
+CHAIND tx staking create-validator \
+--chain-id sei-testnet-2 \
+--commission-rate 0.05 \
+--commission-max-rate 0.2 \
+--commission-max-change-rate 0.1 \
+--min-self-delegation 1 \
+--amount 999500yourToken \
+--pubkey $(CHAIND tendermint show-validator) \
+--moniker "YOUR MONIKER" \
+--from yourWalletAdress \
+--website=adress of your site \
+--identity=keybase key \
+--fees 500yourToken
